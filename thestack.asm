@@ -1,6 +1,7 @@
 	.segment "STARTUP"
 	.segment "INIT"
 	.segment "ONCE"
+	.segment "DATA"
 	
 	CHROUT = $FFD2
 	NEWLINE = $0D
