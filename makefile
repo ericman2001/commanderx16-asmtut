@@ -1,4 +1,4 @@
-all: helloworld addressmodes conditionalbranching math stack
+all: helloworld addressmodes conditionalbranching math stack bitops
 helloworld:
 	cl65 -t cx16 -o HELLOWORLD.PRG -l helloworld.list helloworld.asm
 addressmodes:
@@ -9,5 +9,7 @@ math:
 	cl65 -t cx16 -o MATH.PRG -l math.list math.asm
 stack:
 	cl65 -t cx16 -o STACK.PRG -l thestack.list thestack.asm
+bitops:
+	cl65 -t cx16 -o BITOPS.PRG -l bitops.list bitops.asm
 clean:
 	rm *.PRG *.list *.o
