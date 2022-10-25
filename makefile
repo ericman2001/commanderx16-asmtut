@@ -1,4 +1,4 @@
-all: helloworld addressmodes conditionalbranching math stack bitops therest
+all: helloworld addressmodes conditionalbranching math stack bitops therest kernal zeropageshenanigans
 helloworld:
 	cl65 -t cx16 -o HELLOWORLD.PRG -l helloworld.list helloworld.asm
 addressmodes:
@@ -13,5 +13,9 @@ bitops:
 	cl65 -t cx16 -o BITOPS.PRG -l bitops.list bitops.asm
 therest:
 	cl65 -t cx16 -o THEREST.PRG -l therest.list therest.asm
+kernal:
+	cl65 -t cx16 -o KERNAL.PRG -l kernal.list kernal.asm
+zeropageshenanigans:
+	cl65 -t cx16 -o ZPSHENANIGANS.PRG -l zeropageshenanigans.list zeropageshenanigans.asm
 clean:
 	rm *.PRG *.list *.o
